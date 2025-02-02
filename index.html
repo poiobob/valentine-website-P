@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>for my baby</title> <!-- Website Title -->
+    <style>
+        body {
+            text-align: center;
+            background-color: pink;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: red;
+        }
+        .btn {
+            font-size: 20px;
+            padding: 10px;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+            position: absolute;
+        }
+        #yes {
+            left: 45%;
+            top: 50%;
+        }
+        #no {
+            left: 55%;
+            top: 50%;
+            transition: 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <h1>for my baby</h1> <!-- Displayed Website Name -->
+    <button id="yes" class="btn" onclick="alert(' YAAAAA I LOVE YOU!!!! ❤️')">Yes :DDD</button> <!-- Yes Button Text -->
+    <button id="no" class="btn" onmouseover="moveButton()">No :CCC</button> <!-- No Button Text -->
+
+    <script>
+        function moveButton() {
+            let button = document.getElementById("no");
+            let x = Math.random() * (window.innerWidth - 100); // Random x position
+            let y = Math.random() * (window.innerHeight - 50); // Random y position
+            button.style.left = x + "px";
+            button.style.top = y + "px";
+        }
+    </script>
+</body>
+</html>
